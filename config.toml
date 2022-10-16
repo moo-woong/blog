@@ -2,3 +2,5 @@ theme = "hyde"
 baseURL = "http://moo-woong.github.io"
 languageCode = "en-us"
 title = "My New Hugo Site"
+[params]
+  themeColor = "theme-base-0d"
