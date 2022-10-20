@@ -167,4 +167,11 @@ hugh@ubuntu:~/blog$ hugo
 Total in 89 ms
 hugh@ubuntu:~/blog$ 
 ```
-4. 
+4. Git push
+Hugo 빌드를 하면, public에 새롭게 생성한 포스트가 반영된 사이트 코드가 생성됩니다.
+
+{{< figure src="/images/public_contents.png" title="public 디렉토리 결과" >}}
+
+저는 지금 저의 첫번째 컨텐츠를 작성하고 있다보니 여러분보다 더 많은 내용이 있네요. 해당 내용들을 git으로 add 하고 commit 해 보겠습니다.
+
+{{< figure src="/images/first_posting.png" >}}
