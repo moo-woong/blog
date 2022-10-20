@@ -149,6 +149,9 @@ Hugo로 생성한 포스팅을 Github blog를 통해 관리하려면 두 개의 
 #vim contents/posts/second.md
 ```
 {{< figure src="/images/second.png" title="새로운 포스팅 수정" >}}
+
+`hugo new`로 생성한 posting은 항상 `draft:true`가 설정되어 있습니다. 이 필드는 여러분들이 포스팅을 작성하고 Github에 sync하더라도 보이지 않습니다. 말 그대로 draft이므로 외부로 보여지지 않습니다. 테스트를 위해서 해당 line은 삭제하고 진행하겠습니다.
+
 3. Hugo 빌드
 ```
 hugh@ubuntu:~/blog$ hugo
@@ -179,5 +182,15 @@ Hugo 빌드를 하면, public에 새롭게 생성한 포스트가 반영된 사�
 Hugo로 빌드한 public외에도, 우리 blog의 컨텐츠도 관리가 되어야겠죠? hugo의 root path의 contents 하위 디렉토리도 git add, commit을 통해 blog repository에 sync 시켜줍시다.
 
 5. 결과 확인
+{{< figure src="/images/result.png" >}}
 
+따란! 이제 localhost가 아닌 여러분의 Github blog에서 포스팅이 보여집니다!
+
+## Troubleshooting
+### 포스팅이 안보인다면?
+ - blog와public 모두 github에 반영되었는지 확인해보세요. 
+- `hugo new`로 생성한 post 컨텐츠에서 `draft:true`를 삭제했는지 확인해보세요.
+- `hugo new`를 통해서 post를 생성할 때 경로를 `post/{your_contents_name}.md` 와 같이 post 하위 경로를 설정했는지 확인해보세요. 
+
+여기까지 잘 따라오셨나요? 수고하셨습니다. 저도 첫 블로그 포스팅이라 미비한 부분이 많네요. 여러분도 블로그를 잘 구축하셔서 자기개발에 도움이 되었으면 합니다 :) 
 
