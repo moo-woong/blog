@@ -140,6 +140,8 @@ Hugo로 생성한 포스팅을 Github blog를 통해 관리하려면 두 개의 
 
 자 여기까지 하면 우리는 Github과의 연동도 끝났습니다! 이제 새로운 포스팅을 하나 생성하고 Gitpub에 push 해서 public 도메인으로 우리 블로그가 제대로 보여지는지 확인해보겠습니다.
 
+## 포스팅 및 Github blog를 통한 배포
+
 1. 새로운 포스팅 생성
 ```
 #hugo new posts/second.md
@@ -188,7 +190,7 @@ Hugo로 빌드한 public외에도, 우리 blog의 컨텐츠도 관리가 되어�
 
 ## Troubleshooting
 ### 포스팅이 안보인다면?
- - blog와public 모두 github에 반영되었는지 확인해보세요. 
+- blog와public 모두 github에 반영되었는지 확인해보세요. 헷갈린다면 `public`먼저 git에 push하고, `blog`로 돌아와서 `git add .`로 모두 commit 후 push 해보세요.
 - `hugo new`로 생성한 post 컨텐츠에서 `draft:true`를 삭제했는지 확인해보세요.
 - `hugo new`를 통해서 post를 생성할 때 경로를 `post/{your_contents_name}.md` 와 같이 post 하위 경로를 설정했는지 확인해보세요. 
 
