@@ -175,3 +175,9 @@ Hugo 빌드를 하면, public에 새롭게 생성한 포스트가 반영된 사�
 저는 지금 저의 첫번째 컨텐츠를 작성하고 있다보니 여러분보다 더 많은 내용이 있네요. 해당 내용들을 git으로 add 하고 commit 해 보겠습니다.
 
 {{< figure src="/images/first_posting.png" >}}
+
+Hugo로 빌드한 public외에도, 우리 blog의 컨텐츠도 관리가 되어야겠죠? hugo의 root path의 contents 하위 디렉토리도 git add, commit을 통해 blog repository에 sync 시켜줍시다.
+
+5. 결과 확인
+
+
