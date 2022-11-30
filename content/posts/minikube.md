@@ -1,5 +1,5 @@
 ---
-title: "Minikube 설치"
+title: "Ubuntu에 Minikube 설치하기"
 date: 2022-11-01T22:54:51+09:00
 ---
 
