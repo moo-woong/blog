@@ -1,6 +1,8 @@
 ---
 title: "Github Blog와 Hugo로 블로그 개설하기"
 date: 2022-10-16T08:15:52-07:00
+category: ["Hugo"]
+tag: ["Hugo","GitHub"]
 ---
 
 # GitHub Blog와 Hugo로 블로그 만들기
