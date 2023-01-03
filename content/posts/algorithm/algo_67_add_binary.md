@@ -1,6 +1,8 @@
 ---
 title: "LeeCode 공부 - Add Binary"
 date: 2022-12-08T00:25:33+09:00
+categories: ["Algorithm"]
+tags: ["LeetCode","Algorithm"]
 ---
 
 # LeeCode(67) - Add Binary

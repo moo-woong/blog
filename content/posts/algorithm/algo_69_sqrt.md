@@ -1,6 +1,8 @@
 ---
 title: "LeetCode 공부 - Sqrt(x)"
 date: 2022-12-08T01:07:34+09:00
+categories: ["Algorithm"]
+tags: ["LeetCode","Algorithm"]
 ---
 
 # LeeCode(69) - Sqrt(x)

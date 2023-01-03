@@ -1,6 +1,8 @@
 ---
 title: "LeetCode 공부 - Search Insert Position"
 date: 2022-12-04T19:44:43+09:00
+categories: ["Algorithm"]
+tags: ["LeetCode","Algorithm"]
 ---
 
 # LeeCode(35) - Search Insert Position

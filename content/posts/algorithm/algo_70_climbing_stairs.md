@@ -1,6 +1,8 @@
 ---
 title: "LeeCode 공부 - Climbing Stairs"
 date: 2022-12-08T01:41:17+09:00
+categories: ["Algorithm"]
+tags: ["LeetCode","Algorithm"]
 ---
 
 # LeeCode(70) - Climbing Stairs

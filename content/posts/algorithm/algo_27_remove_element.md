@@ -1,6 +1,8 @@
 ---
 title: "LeetCode 공부 - Remove Element"
 date: 2022-12-04T19:26:04+09:00
+categories: ["Algorithm"]
+tags: ["LeetCode","Algorithm"]
 ---
 
 # LeeCode(27) - Remove Element

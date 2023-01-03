@@ -1,7 +1,8 @@
 ---
 title: "LeetCode 공부 - Remove Duplicates from Sorted List"
 date: 2022-12-08T23:40:46+09:00
-draft: true
+categories: ["Algorithm"]
+tags: ["LeetCode","Algorithm"]
 ---
 # LeeCode(83) - Remove Duplicates from Sorted List
 

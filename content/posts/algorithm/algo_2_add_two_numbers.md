@@ -1,7 +1,8 @@
 ---
 title: "LeeCode 공부 - Add Two Numbers"
 date: 2022-12-04T22:19:32+09:00
-draft: true
+categories: ["Algorithm"]
+tags: ["LeetCode","Algorithm"]
 ---
 
 # LeeCode(67) - Add Two Numbers

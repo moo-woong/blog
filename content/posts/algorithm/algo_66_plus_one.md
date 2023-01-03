@@ -1,6 +1,8 @@
 ---
 title: "LeetCode 공부 - Plus One"
 date: 2022-12-04T21:02:51+09:00
+categories: ["Algorithm"]
+tags: ["LeetCode","Algorithm"]
 ---
 
 # LeeCode(66) - Plus One

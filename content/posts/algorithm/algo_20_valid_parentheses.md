@@ -1,6 +1,8 @@
 ---
 title: "LeetCode 공부 - Valid Parentheses"
 date: 2022-12-01T23:05:08+09:00
+categories: ["Algorithm"]
+tags: ["LeetCode","Algorithm"]
 ---
 
 # LeeCode(20) - Valid Parentheses

@@ -1,6 +1,8 @@
 ---
 title: "LeetCode 공부 - Remove Duplicates from Sorted Array"
 date: 2022-12-04T19:12:59+09:00
+categories: ["Algorithm"]
+tags: ["LeetCode","Algorithm"]
 ---
 
 # LeeCode(26) - Remove Duplicates from Sorted Array

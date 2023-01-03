@@ -1,6 +1,8 @@
 ---
 title: "LeetCode 공부 - Merge Two Sorted Lists"
 date: 2022-12-01T23:38:10+09:00
+categories: ["Algorithm"]
+tags: ["LeetCode","Algorithm"]
 ---
 
 # LeeCode(21) - Merge Two Sorted Lists

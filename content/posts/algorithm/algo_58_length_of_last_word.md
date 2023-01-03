@@ -1,6 +1,8 @@
 ---
 title: "LeetCode 공부 - Length of Last Word"
 date: 2022-12-04T20:43:20+09:00
+categories: ["Algorithm"]
+tags: ["LeetCode","Algorithm"]
 ---
 
 # LeeCode(59) - Length of Last Word

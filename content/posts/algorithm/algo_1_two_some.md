@@ -1,6 +1,8 @@
 ---
 title: "LeetCode 공부 - Two Sum"
 date: 2022-11-30T23:23:39+09:00
+categories: ["Algorithm"]
+tags: ["LeetCode","Algorithm"]
 ---
 
 # LeeCode(1) - Two Sum

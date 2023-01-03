@@ -1,6 +1,8 @@
 ---
 title: "LeetCode 공부 - Palindrome Number"
 date: 2022-12-01T00:27:00+09:00
+categories: ["Algorithm"]
+tags: ["LeetCode","Algorithm"]
 ---
 # LeeCode(9) - Palindrome Number
 

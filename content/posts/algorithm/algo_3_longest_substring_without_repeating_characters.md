@@ -1,6 +1,8 @@
 ---
 title: "LeetCode 공부 - Longest Substring Without Repeating Characters"
 date: 2022-12-05T00:01:19+09:00
+categories: ["Algorithm"]
+tags: ["LeetCode","Algorithm"]
 ---
 
 # LeeCode(3) - Longest Substring Without Repeating Characters

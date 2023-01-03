@@ -1,6 +1,8 @@
 ---
 title: "LeetCode 공부 - Longest Common Prefix"
 date: 2022-12-01T22:37:08+09:00
+categories: ["Algorithm"]
+tags: ["LeetCode","Algorithm"]
 ---
 
 # LeeCode(14) - Longest Common Prefix
