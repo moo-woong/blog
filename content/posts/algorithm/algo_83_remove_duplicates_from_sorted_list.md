@@ -4,7 +4,7 @@ date: 2022-12-08T23:40:46+09:00
 categories: ["Algorithm"]
 tags: ["LeetCode","Algorithm"]
 ---
-# LeeCode(83) - Remove Duplicates from Sorted List
+# LeetCode(83) - Remove Duplicates from Sorted List
 
 ## 문제
 정수를 포함하는 구조체 리스트가 정렬되어 주어진다. 중복된 노드를 제외한 리스트 head를 반환하라

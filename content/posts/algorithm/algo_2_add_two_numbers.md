@@ -1,11 +1,11 @@
 ---
-title: "LeeCode 공부 - Add Two Numbers"
+title: "LeetCode 공부 - Add Two Numbers"
 date: 2022-12-04T22:19:32+09:00
 categories: ["Algorithm"]
 tags: ["LeetCode","Algorithm"]
 ---
 
-# LeeCode(67) - Add Two Numbers
+# LeetCode(67) - Add Two Numbers
 
 ## 문제
 Non-empty 정수 Linked list 두 개가 주어진다. 각 list는 정수의 역방향, 즉 가장 낮은 자리수가 첫 번재 위치한다. 각 리스트의 정수를 더 하여 주어진 리스트와 동일하게 가장 낮은 자리 수의 정수가 먼저 오도록 배치된 LinkList를 반환하라.

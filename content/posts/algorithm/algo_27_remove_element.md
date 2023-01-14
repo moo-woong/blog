@@ -5,7 +5,7 @@ categories: ["Algorithm"]
 tags: ["LeetCode","Algorithm"]
 ---
 
-# LeeCode(27) - Remove Element
+# LeetCode(27) - Remove Element
 
 ## 문제
 중복이 허용되며, 정렬되지 않은 integer 배열 `nums`와 `val`가 주어진다. `nums`에서 `val`가 제거된 배열을 반환한다. 추가적인 array 할당은 할 수 없으며, `in-place`로 수정한다.

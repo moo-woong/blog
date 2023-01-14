@@ -5,7 +5,7 @@ categories: ["Algorithm"]
 tags: ["LeetCode","Algorithm"]
 ---
 
-# LeeCode(14) - Longest Common Prefix
+# LeetCode(14) - Longest Common Prefix
 
 ## 문제
 문자열 배열이 주어진다. 이 문자열 배열에서 문자가 공통인 부분만큼 문자열로 반환하라.

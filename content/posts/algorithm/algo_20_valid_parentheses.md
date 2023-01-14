@@ -5,7 +5,7 @@ categories: ["Algorithm"]
 tags: ["LeetCode","Algorithm"]
 ---
 
-# LeeCode(20) - Valid Parentheses
+# LeetCode(20) - Valid Parentheses
 
 ## 문제
 소괄호, 중괄호, 대괄호로 이루어진 문자열이 주어진다. 이 문자열의 괄호들이 알맞은 pair라면 true를, 아니라면 false를 반환한다.

@@ -4,7 +4,7 @@ date: 2022-12-01T00:27:00+09:00
 categories: ["Algorithm"]
 tags: ["LeetCode","Algorithm"]
 ---
-# LeeCode(9) - Palindrome Number
+# LeetCode(9) - Palindrome Number
 
 ## 문제
 integer `x`가 주어질 때, `x`가 Palindrome(회문)을 만족하면 `true`를 return, 아니라면 `false`를 리턴

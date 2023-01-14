@@ -5,7 +5,7 @@ categories: ["Algorithm"]
 tags: ["LeetCode","Algorithm"]
 ---
 
-# LeeCode(59) - Length of Last Word
+# LeetCode(59) - Length of Last Word
 
 ## 문제
 단어와 공백으로 이루어진 문자열 `s`가 주어진다. 마지막 단어의 철자 개수를 반환하라.

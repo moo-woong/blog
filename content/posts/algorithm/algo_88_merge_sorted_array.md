@@ -5,7 +5,7 @@ categories: ["Algorithm"]
 tags: ["LeetCode","Algorithm"]
 ---
 
-# LeeCode(88) - Merge Sorted Array
+# LeetCode(88) - Merge Sorted Array
 
 ## 문제
 두 개의 오름차순으로 정렬된 정수형 배열 `nums1`과 `nums2`가 주어진다. 또한 `nums1`의 element의 수를 나타내는 `m`과 `nums2`의 수를 나타내는 `n`이 주어진다. 

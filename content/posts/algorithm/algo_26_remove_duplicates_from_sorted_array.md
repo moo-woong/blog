@@ -5,7 +5,7 @@ categories: ["Algorithm"]
 tags: ["LeetCode","Algorithm"]
 ---
 
-# LeeCode(26) - Remove Duplicates from Sorted Array
+# LeetCode(26) - Remove Duplicates from Sorted Array
 
 ## 문제
 중복이 허용된 integer type의 오름처순 배열에서, 중복된 값들을 제거한 sorted array를 만들고, 중복을 제외한 원소의 개수를 반환하라.

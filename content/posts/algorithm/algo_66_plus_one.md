@@ -5,7 +5,7 @@ categories: ["Algorithm"]
 tags: ["LeetCode","Algorithm"]
 ---
 
-# LeeCode(66) - Plus One
+# LeetCode(66) - Plus One
 
 ## 문제
 정수를 표현하는 `vector<int> digits`가 주어진다. digits는 배열로 이루어져 있지만, 정수를 표현한다. 예를들어 [3,2,1] 배열인 경우, 정수 `321`을 나타낸다.

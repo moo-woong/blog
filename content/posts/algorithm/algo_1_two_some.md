@@ -5,7 +5,7 @@ categories: ["Algorithm"]
 tags: ["LeetCode","Algorithm"]
 ---
 
-# LeeCode(1) - Two Sum
+# LeetCode(1) - Two Sum
 
 ## 문제
 integer 배열과 target이 주어질 때, 배열에서 두 정수의 합이 target을 만족하는 두 index를 반환

@@ -5,7 +5,7 @@ categories: ["Algorithm"]
 tags: ["LeetCode","Algorithm"]
 ---
 
-# LeeCode(21) - Merge Two Sorted Lists
+# LeetCode(21) - Merge Two Sorted Lists
 
 ## 문제
 두 Linked List의 header가 주어진다. 두 리스트를 정렬하여 하나의 리스트로 반환하라.

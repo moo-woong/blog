@@ -5,7 +5,7 @@ categories: ["Algorithm"]
 tags: ["LeetCode","Algorithm"]
 ---
 
-# LeeCode(69) - Sqrt(x)
+# LeetCode(69) - Sqrt(x)
 
 ## 문제
 양의 정수 `x`가 주어질 때, `x`의 제곱근을 반환하라. 반환되는 제곱근은 정수형으로 내림한 값으로 반환하라.

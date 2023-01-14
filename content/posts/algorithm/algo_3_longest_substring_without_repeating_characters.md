@@ -5,7 +5,7 @@ categories: ["Algorithm"]
 tags: ["LeetCode","Algorithm"]
 ---
 
-# LeeCode(3) - Longest Substring Without Repeating Characters
+# LeetCode(3) - Longest Substring Without Repeating Characters
 
 ## 문제
 문자열 `s`가 주어질 때, 이 문자열에서 반복되지 않은 문자를 갖는 substring의 길이를 반환하라.

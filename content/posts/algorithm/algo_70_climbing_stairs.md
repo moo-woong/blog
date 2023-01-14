@@ -1,11 +1,11 @@
 ---
-title: "LeeCode 공부 - Climbing Stairs"
+title: "LeetCodee 공부 - Climbing Stairs"
 date: 2022-12-08T01:41:17+09:00
 categories: ["Algorithm"]
 tags: ["LeetCode","Algorithm"]
 ---
 
-# LeeCode(70) - Climbing Stairs
+# LeetCode(70) - Climbing Stairs
 
 ## 문제
 `n`개의 단이 있는 계단이 있다. 계단을 오르는 방법은 1칸씩 혹은 2칸씩 오르는 방법이 있다. `n`번째의 계단을 오르는 방법을 몇개나 있는지 반환하라.

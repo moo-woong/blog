@@ -1,14 +1,14 @@
 ---
-title: "LeetCode 공부 - Binary Tree Inorder Traversal"
-date: 2023-01-09T22:20:19+09:00
+title: "LeetCode 공부 - Same Tree"
+date: 2023-01-09T22:30:45+09:00
 categories: ["Algorithm"]
 tags: ["LeetCode","Algorithm"]
 ---
 
-# LeetCode(94) - Binary Tree Inorder Traversal
+# [LeetCode(100) - Same Tree](https://leetcode.com/problems/same-tree/)
 
 ## 문제
-Binary Tree의 `root`가 주어진다. Inorder Traversal(중위순회)를 한 결과를 반환하라.
+Binary Tree 두 개가 주어진다. 두 Binary Tree가 같은지 비교하여 같다면 `True`를, 다르다면 `False`를 반환한다.
 
 ### 입력
 ```

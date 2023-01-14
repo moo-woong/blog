@@ -1,11 +1,11 @@
 ---
-title: "LeeCode 공부 - Add Binary"
+title: "LeetCode 공부 - Add Binary"
 date: 2022-12-08T00:25:33+09:00
 categories: ["Algorithm"]
 tags: ["LeetCode","Algorithm"]
 ---
 
-# LeeCode(67) - Add Binary
+# LeetCode(67) - Add Binary
 
 ## 문제
 Binary를 나타내는 문자열 `s1`, `s2`가 주어질 때 두 Bianry를 합 한 문자열을 반환하라.

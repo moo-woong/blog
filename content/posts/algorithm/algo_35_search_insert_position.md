@@ -5,7 +5,7 @@ categories: ["Algorithm"]
 tags: ["LeetCode","Algorithm"]
 ---
 
-# LeeCode(35) - Search Insert Position
+# LeetCode(35) - Search Insert Position
 
 ## 문제
 중복을 허용하지 않는 정렬된 integer `nums`와 integer type의 `target`이 주어진다. `nums`배열에서 `target`을 발견한다면 `target`이 위치한 index를 반환한다. `target`을 찾지 못하였다면 `target`이 포함될 index를 반환한다. time complexity는 `O(log n)`을 만족해야 한다.
