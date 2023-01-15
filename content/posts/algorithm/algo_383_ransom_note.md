@@ -25,7 +25,7 @@ Output: true
 
 ## 풀이
 0. `ransomNote`를 모두 소비했을 때 `magazine`의 일부일 경우 true를 반환한다.
-1. `ransomNote`에 있는 문자가 `magazine`에 있다면 false이다.
+1. `ransomNote`에 있는 문자가 `magazine`에 없다면 false이다.
 2. `ransomNote`의 문자열을 순회하며 각 문자들을 `map`에 `key`로 하고 `value`는 등장 횟수마다 +1 한다.
 3. `magazine`의 문자열을 순회하며 각 문자들을 `map`에 `key`로 하고 `value`를 등장횟수 마다 -1 한다.
 4. `map`은 `ransomNote`의 모든 문자들을 `magazine`에서 소비했으므로 모든 `key`의 `value`가 0 미만이면 true를 반환하고 그 외에는 false를 반환한다.
