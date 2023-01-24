@@ -1,10 +1,11 @@
 ---
 title: "LeetCode 공부 - Next Greater Element I"
-date: 2023-01-17T23:29:00+09:00
+categories: ["Algorithm"]
+tags: ["LeetCode","Algorithm"]
 draft: true
 ---
 
-# LeetCode(409) - [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/description/)
+# LeetCode(496) - [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/description/)
 
 ## 문제
 정수형 배열 `nums1`과 `nums2`가 주어진다. `nums1`은 `nums2`의 부분 집합이다. 따라서, `nums1`에 있는 `i`번째 정수는 `nums2`에 존재한다. 다음의 조건에 맞은 정수를 저장하여 배열을 반환하라.
