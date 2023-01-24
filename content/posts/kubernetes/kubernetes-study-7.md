@@ -15,7 +15,7 @@ Kubernetes cluster내에서는 같은 네임스페이스에 있는 각 Pod들은
 
 {{< figure src="/images/kubernetes/kube-proxy2.svg">}}
 
-Backend 서버는 IP(10.32.0.35)를 통해 접근할 수 있습니다. 하지만 데이터베이스의 해당 IP가 항상 해당 IP를 갖는다는 보장이 없습니다. 따라서 Backend 서버는 IP가 아닌 데이터베이스를 특정한 이름을 가지고 접근해야 합니다. 이러한 접근방식은 `Service`라는 개념이며, 추후에 다루어질 예정입니다. 이제 Backend는 DB라는 서비스이름으로 접근할 수 있습니다. 
+Backend 서버는 IP(10.32.0.35)를 통해 데이터베이스에 접근할 수 있습니다. 하지만 데이터베이스가의 IP가 항상 해당 IP를 갖는다는 보장이 없습니다. 따라서 Backend 서버는 IP가 아닌 데이터베이스를 특정한 이름을 가지고 접근해야 합니다. 이러한 접근방식은 `Service`라는 개념이며, 추후에 다루어질 예정입니다. 이제 Backend는 DB라는 서비스이름으로 접근할 수 있습니다. 
 
 {{< figure src="/images/kubernetes/kube-proxy3.svg">}}
 
