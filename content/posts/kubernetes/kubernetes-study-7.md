@@ -7,11 +7,11 @@ categories: ["Kubernetes"]
 
 ## kube-proxy?
 
-Kubernetes cluster내에서는 같은 네임스페이스에 있는 각 Pod들은 다른 Pod들과 통신이 가능합니다. 설령 다른 워커노드에 설치된 Pod들도 마찬가지로 통신이 가능합니다. 이러한 통신을 위해서 Pod 네트워크가 필요하며, Pod 네트워크는 내부 가상 네트워크입니다. 
+Kubernetes cluster내에서는 같은 네임스페이스에 있는 각 Pod들은 다른 Pod들과 통신이 가능합니다. 설령 다른 워커노드에 설치된 Pod들도 마찬가지로 통신이 가능합니다. 이러한 통신을 위해서 내부 가상 네트워크인 Pod 네트워크가 필요합니다.
 
 {{< figure src="/images/kubernetes/kube-proxy.svg">}}
 
-저는 웹서비스 하나를 운용하고 있으며, 이를 Kubernetes를 통해 운용하고 있다고 가정하겠습니다. 저의 Backend 서버는 Node1에 배치되어 있고, 서비스의 정보를 영구적으로 저장하기 위해 데이터베이스를 사용하며, 데이터베이스는 Node2에 배치되어있습니다.
+저는 웹서비스 하나를 운용하고 있으며, 이를 Kubernetes를 통해 운용하고 있다고 가정하겠습니다. 저의 Backend 서버는 `Node1`에 배치되어 있고, 서비스의 정보를 영구적으로 저장하기 위해 데이터베이스를 사용하며, 데이터베이스는 `Node2`에 배치되어있습니다.
 
 {{< figure src="/images/kubernetes/kube-proxy2.svg">}}
 
