@@ -1,0 +1,28 @@
+User : User {
+  
+}
+
+cluster : Kubernetes Cluster {
+  node : Node {
+    pod1 : Pod {
+      container1 : Container
+      }
+    
+    pod2 : Pod {
+      container1 : Container
+      }
+    }
+    node2 : Node {
+      pod3 : Pod {
+        container
+      }
+    }
+  }
+  
+
+
+User -> cluster
+User1 -> cluster
+User2 -> cluster
+User3 -> cluster
+User4 -> cluster

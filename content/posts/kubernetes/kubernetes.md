@@ -216,7 +216,7 @@ $ sudo kubeadm init
 
 `"Status from runtime service failed"` 오류가 발생할 수 있습니다.
 ```
-hugh@master:~$ sudo kubeadm init
+hugh@master:~$ sudo kubeadm init --pod-network-cidr 192.168.0.0/16
 [sudo] password for hugh: 
 [init] Using Kubernetes version: v1.26.0
 [preflight] Running pre-flight checks
@@ -227,6 +227,10 @@ time="2023-01-03T20:21:46-08:00" level=fatal msg="getting status of runtime: rpc
 [preflight] If you know what you are doing, you can make a check non-fatal with `--ignore-preflight-errors=...`
 To see the stack trace of this error execute with --v=5 or higher
 ```
+* `--pod-network-cidr` subnet은 이 cluster에서 생성되는 Pod들의 network를 명시하는 설정입니다.
+* `--pod-network-cidr`는 `calico` CNI를 설치할때 default로 사용되는 subnet이라서 해당 subnet을 사용하도록 명시하였습니다.
+
+
 위와 같이 오류가 발생한다면 초기화를 진행해주세요.
 ```
 $ sudo rm /etc/containerd/config.toml
@@ -314,10 +318,65 @@ worker3   NotReady   <none>          57s     v1.26.0
 마스터 노드는 worker노드들의 존재를 알지만 STATUS가 NotReady입니다. 이는 pod network가 현재 deploy된 상태가 아니기 때문입니다.
 pod network를 설치해봅니다.
 
-다양한 `CNI(Container Network Interface)`가 있지만, 간단한 `Weave Net`을 설치합니다.
+다양한 `CNI(Container Network Interface)`가 있지만, 저는 `calico`를 설치해보겠습니다.
 
+Calico 설정파일 다운로드
 ```
-$ kubectl apply -f https://github.com/weaveworks/weave/releases/download/v2.8.1/weave-daemonset-k8s.yaml
+hugh@master:~$ cd ~/calico/
+hugh@master:~/calico$ curl https://projectcalico.docs.tigera.io/manifests/calico.yaml -O
+```
+
+Calico CNI 설치
+```
+hugh@master:~/calico$ kubectl apply -f calico.yaml 
+poddisruptionbudget.policy/calico-kube-controllers created
+serviceaccount/calico-kube-controllers created
+serviceaccount/calico-node created
+configmap/calico-config created
+customresourcedefinition.apiextensions.k8s.io/bgpconfigurations.crd.projectcalico.org created
+customresourcedefinition.apiextensions.k8s.io/bgppeers.crd.projectcalico.org created
+customresourcedefinition.apiextensions.k8s.io/blockaffinities.crd.projectcalico.org created
+customresourcedefinition.apiextensions.k8s.io/caliconodestatuses.crd.projectcalico.org created
+customresourcedefinition.apiextensions.k8s.io/clusterinformations.crd.projectcalico.org created
+customresourcedefinition.apiextensions.k8s.io/felixconfigurations.crd.projectcalico.org created
+customresourcedefinition.apiextensions.k8s.io/globalnetworkpolicies.crd.projectcalico.org created
+customresourcedefinition.apiextensions.k8s.io/globalnetworksets.crd.projectcalico.org created
+customresourcedefinition.apiextensions.k8s.io/hostendpoints.crd.projectcalico.org created
+customresourcedefinition.apiextensions.k8s.io/ipamblocks.crd.projectcalico.org created
+customresourcedefinition.apiextensions.k8s.io/ipamconfigs.crd.projectcalico.org created
+customresourcedefinition.apiextensions.k8s.io/ipamhandles.crd.projectcalico.org created
+customresourcedefinition.apiextensions.k8s.io/ippools.crd.projectcalico.org created
+customresourcedefinition.apiextensions.k8s.io/ipreservations.crd.projectcalico.org created
+customresourcedefinition.apiextensions.k8s.io/kubecontrollersconfigurations.crd.projectcalico.org created
+customresourcedefinition.apiextensions.k8s.io/networkpolicies.crd.projectcalico.org created
+customresourcedefinition.apiextensions.k8s.io/networksets.crd.projectcalico.org created
+clusterrole.rbac.authorization.k8s.io/calico-kube-controllers created
+clusterrole.rbac.authorization.k8s.io/calico-node created
+clusterrolebinding.rbac.authorization.k8s.io/calico-kube-controllers created
+clusterrolebinding.rbac.authorization.k8s.io/calico-node created
+daemonset.apps/calico-node created
+deployment.apps/calico-kube-controllers created
+```
+
+정상설치 되었다면 calico관련 pod들이 Running status인것을 확인할 수 있습니다.
+```
+hugh@master:~/calico$ kubectl get po -A
+NAMESPACE     NAME                                      READY   STATUS    RESTARTS   AGE
+kube-system   calico-kube-controllers-57b57c56f-bmcnw   1/1     Running   0          105s
+kube-system   calico-node-djvgt                         1/1     Running   0          105s
+kube-system   calico-node-g9bcp                         1/1     Running   0          105s
+kube-system   calico-node-hdwtj                         1/1     Running   0          105s
+kube-system   calico-node-nhdpq                         1/1     Running   0          105s
+kube-system   coredns-787d4945fb-9vcsv                  1/1     Running   0          9m30s
+kube-system   coredns-787d4945fb-kxtsk                  1/1     Running   0          9m30s
+kube-system   etcd-master                               1/1     Running   24         9m44s
+kube-system   kube-apiserver-master                     1/1     Running   0          9m45s
+kube-system   kube-controller-manager-master            1/1     Running   0          9m46s
+kube-system   kube-proxy-9zkvx                          1/1     Running   0          2m29s
+kube-system   kube-proxy-lkdk6                          1/1     Running   0          9m30s
+kube-system   kube-proxy-nc56s                          1/1     Running   0          4m34s
+kube-system   kube-proxy-tw5xc                          1/1     Running   0          3m14s
+kube-system   kube-scheduler-master                     1/1     Running   0          9m44s
 ```
 
 설치 후 node들이 정상적으로 Ready 상태로 변경된걸 확인할 수 있습니다.

@@ -1,7 +1,8 @@
 ---
 title: "LeetCode 공부 - Longest Palindrome"
 date: 2023-01-16T23:54:27+09:00
-draft: true
+categories: ["Algorithm"]
+tags: ["LeetCode","Algorithm"]
 ---
 
 # LeetCode(409) - [Longest Palindrome](https://leetcode.com/problems/longest-palindrome/description/)

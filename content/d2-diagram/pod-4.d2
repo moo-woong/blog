@@ -1,0 +1,17 @@
+User : User {
+  
+}
+
+cluster : Kubernetes Cluster {
+  node : Node {
+    pod1 : Pod {
+      container1 : Main Container 
+      container2 : Helper Container 
+      network : Network {
+        shape: cloud
+      }
+      container1 -- network
+      container2 -- network
+    }
+  }
+}

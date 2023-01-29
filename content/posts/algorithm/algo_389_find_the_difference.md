@@ -5,7 +5,7 @@ categories: ["Algorithm"]
 tags: ["LeetCode","Algorithm"]
 ---
 
-# LeetCode(387) - [ind the Difference](https://leetcode.com/problems/find-the-difference/)
+# LeetCode(387) - [Find the Difference](https://leetcode.com/problems/find-the-difference/)
 
 ## 문제
 문자열 `s`와 `t`가 주어진다. 문자열 `t`는 문자열 `s`를 셔플링하고, 여기에 문자 하나를 추가한 문자열이다.
