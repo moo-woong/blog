@@ -1,5 +1,5 @@
 ---
-title: "[Kubernetes Study] k8s objects - Pod"
+title: "[Kubernetes Study] k8s objects - Recap"
 date: 2023-01-29T17:00:14+09:00
 series: ["Kubernetes Study"]
 categories: ["Kubernetes"]
