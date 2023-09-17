@@ -1,7 +1,6 @@
 ---
 title: "Kubernetes Raspberry Pi"
 date: 2023-09-10T15:17:57+09:00
-draft: true
 series: ["Kubernetes Study"]
 categories: ["Kubernetes"]
 ---
