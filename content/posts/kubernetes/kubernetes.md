@@ -113,7 +113,25 @@ $ sudo apt-get install -y apt-transport-https ca-certificates curl
 ### Official GPG 키 등록
 ```
 $ sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg
+```
 
+
+>2023-09-10 기준, google gpg의 url이 valid하지 않습니다. 
+
+```
+W: GPG error: https://packages.cloud.google.com/apt kubernetes-xenial InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY B53DC80D13EDEF05
+E: The repository 'https://apt.kubernetes.io kubernetes-xenial InRelease' is not signed.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+```
+
+다음의 주소로 사용해보세요.
+
+```
+sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://dl.k8s.io/apt/doc/apt-key.gpg
+```
+
+```
 $ echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
 ```
 
@@ -325,6 +343,7 @@ Calico 설정파일 다운로드
 hugh@master:~$ cd ~/calico/
 hugh@master:~/calico$ curl https://projectcalico.docs.tigera.io/manifests/calico.yaml -O
 ```
+> calico 주소는 변경될 수 있습니다. 2023-09-10 기준으로는 https://raw.githubusercontent.com/projectcalico/calico/v3.26.1/manifests/calico.yaml 로 redirect 되므로, 변경된 주소로 사용해야 합니다.
 
 Calico CNI 설치
 ```
