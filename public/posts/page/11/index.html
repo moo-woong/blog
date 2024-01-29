@@ -70,6 +70,18 @@ Posts
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>LeetCode 공부 - Longest Common Prefix
+</h2>
+</header>
+<div class=entry-content>
+<p>LeetCode(14) - Longest Common Prefix 문제 문자열 배열이 주어진다. 이 문자열 배열에서 문자가 공통인 부분만큼 문자열로 반환하라.
+입력 strs = ["flower","flow","flight"] 출력 "fl" 풀이 문자열들을 사전순으로 정렬하고, 첫 번째 문자열을 기준으로 비교하여 같은 문자라면 index를 순차적으로 증가시킨다. 문자가 같을 때 까지 증가하다가 다른 문자가 나오면 기존까지 저장한 문자열을 반환한다. 코드 string longestCommonPrefix(vector&lt;string>& strs) { vector&lt;string> s = strs; sort(s.begin(), s.end()); string ret = ""; string pilot = s.at(0); for (int i = 0; i &lt; pilot....</p>
+</div>
+<footer class=entry-footer><span title="2022-12-01 22:37:08 +0900 KST">December 1, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;144 words&nbsp;·&nbsp;Me</footer>
+<a class=entry-link aria-label="post link to LeetCode 공부 - Longest Common Prefix" href=https://moo-woong.github.io/posts/algorithm/algo_14_longest_common_prefix/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>LeetCode 공부 - Palindrome Number
 </h2>
 </header>

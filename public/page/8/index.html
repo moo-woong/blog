@@ -64,6 +64,21 @@
 <main class=main>
 <article class=post-entry>
 <header class=entry-header>
+<h2>[Dev/Infra] XXX is not in the sudoers file. This incident will be reported.
+</h2>
+</header>
+<div class=entry-content>
+<p>XXX is not in the sudoers file. This incident will be reported. Ubuntu, CentOS 등 리눅스 환경을 새로 설치하면 만나는 오류. 개발 툴을 설정하기 위해 유틸들을 설치할때 sudo를 사용하다 마주하게 된다.
+XXX is not in the sudoers file. This incident will be reported. 원인 현재 접속중인 계정이 sudoers에 등록되지 않아 발생한다. sudoers파일에 현재 계정을 등록하여 sudo권한을 주자.
+sudo의 뜻은? “super user do”.
+su 뜻은? “super user”
+해결법 su 명령어로 root계정으로 전환 [hugh@localhost ~]$ su Password: #비밀번호 입력 [root@localhost hugh]# [root@localhost hugh]# /etc/sudoers 파일에서 현재 계정을 추가 99 ## Allow root to run any commands anywhere 100 root ALL=(ALL) ALL 101 hugh ALL=(ALL) ALL # &lt;-- sudo권한이 필요한 계정 추가 root계정에서 로그아웃하고 추가한 계정에서 sudo권한이 필요한 명령어 수행 [root@localhost hugh]# exit exit [hugh@localhost ~]$ [hugh@localhost ~]$ [hugh@localhost ~]$ sudo yum install -y vim [sudo] password for hugh: Loaded plugins: fastestmirror, langpacks Loading mirror speeds from cached hostfile * base: mirror....</p>
+</div>
+<footer class=entry-footer><span title="2023-01-03 21:25:33 +0900 KST">January 3, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;161 words&nbsp;·&nbsp;Me</footer>
+<a class=entry-link aria-label="post link to [Dev/Infra] XXX is not in the sudoers file.  This incident will be reported." href=https://moo-woong.github.io/posts/dev_env/sudoers_permission/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>VMWare로 Kubernetes 설치하기
 </h2>
 </header>
@@ -112,18 +127,6 @@ $ sudo apt-get update $ sudo apt-get install \ ca-certificates \ curl \ gnupg \ 
 </div>
 <footer class=entry-footer><span title="2022-12-08 01:07:34 +0900 KST">December 8, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;225 words&nbsp;·&nbsp;Me</footer>
 <a class=entry-link aria-label="post link to LeetCode 공부 - Sqrt(x)" href=https://moo-woong.github.io/posts/algorithm/algo_69_sqrt/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>LeetCode 공부 - Add Binary
-</h2>
-</header>
-<div class=entry-content>
-<p>LeetCode(67) - Add Binary 문제 Binary를 나타내는 문자열 s1, s2가 주어질 때 두 Bianry를 합 한 문자열을 반환하라.
-입력 Input: a = "1010", b = "1011" 출력 Output: "10101" 풀이 두 문자열의 끝에서 부터 0번 째 index 까지 순회한다. 순회하며 각각 i, j위치에 있는 바이너리를 계산한다. i와 j의 값을 carry에 저장하고, carry는 모듈러 연산을 통해 나머지 값을 반환할 string의 첫 번째 위치에 저장한다. carry는 나누기의 몫을 취하고, 해당 값을 유지한다....</p>
-</div>
-<footer class=entry-footer><span title="2022-12-08 00:25:33 +0900 KST">December 8, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;193 words&nbsp;·&nbsp;Me</footer>
-<a class=entry-link aria-label="post link to LeetCode 공부 - Add Binary" href=https://moo-woong.github.io/posts/algorithm/algo_67_add_binary/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

@@ -64,6 +64,19 @@
 <main class=main>
 <article class=post-entry>
 <header class=entry-header>
+<h2>[Kubernetes Study] k8s components - kube-controller-manager
+</h2>
+</header>
+<div class=entry-content>
+<p>kube-controller-manager? kube-controller-manager의 역할은 Kubernetes를 구성하하는 다양한 컨트롤러들을 관리하는 것입니다. 컨트롤러들은 운용자로부터 주어진 상태(desired state)를 만족시키기 위해 다음과 같은 역할을 합니다.
+상태 모니터링 상태에 따른 상태 해결(교정) node-controller는 Cluster를 구성하는 노드들의 상태를 모니터링 합니다. 모니터링은 kube-apiserver를 통해 수행하며 매 5초 마다 상태관리를 수행합니다. 또한 노드의 이상이 감지될 시 40초간의 Grace period를 두어, 40초 이후에도 health check이 실패할 경우 NotReady Status를 만들어 해당 노드로 스케쥴링이 되지 않도록 합니다.
+repliaction-controller는 ReplicaSet관리와 desinered Pod 수를 모니터링하고 관리합니다....</p>
+</div>
+<footer class=entry-footer><span title="2023-01-24 17:16:42 +0900 KST">January 24, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;180 words&nbsp;·&nbsp;Me</footer>
+<a class=entry-link aria-label="post link to [Kubernetes Study] k8s components - kube-controller-manager" href=https://moo-woong.github.io/posts/kubernetes/kubernetes-study-4/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>LeetCode 공부 - Keyboard Row
 </h2>
 </header>
@@ -111,18 +124,6 @@ Key-value store 구조 위의 테이블은 Tabular Format의 예입니다. 행(R
 </div>
 <footer class=entry-footer><span title="2023-01-15 23:03:34 +0900 KST">January 15, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;207 words&nbsp;·&nbsp;Me</footer>
 <a class=entry-link aria-label="post link to [Kubernetes Study] k8s components - ETCD" href=https://moo-woong.github.io/posts/kubernetes/kubernetes-study-2/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>[Kubernetes Study] Cluster Architecture
-</h2>
-</header>
-<div class=entry-content>
-<p>Kubernetes Study posts들은 Udemy의 Kubernetes 스테디셀러인 Mumshad의 Certified Kubernetes Administrator (CKA) with Practice Tests 강의를 스터디하며 강의 내용을 체득하기 위해 간략하게 정리하는 포스트입니다. 따라서 관련 내용들은 Udemy 강의 내용이며, 아직 다 학습하지는 못했지만.. 강의 내용이 아주 이해하기 쉽게 잘 설명된것 같으니 할인할 때 구매하시면 좋을것 같습니다. 저는 약 19,000에 구매했던것 같습니다.
-Kubernetes 구성요소들 Kubernetes는 contaierized 된 application들의 실행, 관리하는 플랫폼입니다. Google에서 처음 개발되었으며 오픈소스 기반으로 현재는 Linux foundation 재단에서 관리합니다. AWS, Azure, GCP 등 Public Cloud 업체들은 Kubernetes 환경을 제공하고 있고 규모가 있는 업체들의 경우 On-premise로 Kubernetes를 구축하여 Service를 제공하고 있습니다....</p>
-</div>
-<footer class=entry-footer><span title="2023-01-15 20:26:32 +0900 KST">January 15, 2023</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;566 words&nbsp;·&nbsp;Me</footer>
-<a class=entry-link aria-label="post link to [Kubernetes Study] Cluster Architecture" href=https://moo-woong.github.io/posts/kubernetes/kubernetes-study-1/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

@@ -9,7 +9,16 @@
       <link>https://moo-woong.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 29 Jan 2024 23:42:35 +0900</lastBuildDate><atom:link href="https://moo-woong.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Jan 2024 00:00:26 +0900</lastBuildDate><atom:link href="https://moo-woong.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes Study 11 Taints Tolerations</title>
+      <link>https://moo-woong.github.io/posts/kubernetes/kubernetes-study-11-taints-tolerations/</link>
+      <pubDate>Tue, 30 Jan 2024 00:00:26 +0900</pubDate>
+      
+      <guid>https://moo-woong.github.io/posts/kubernetes/kubernetes-study-11-taints-tolerations/</guid>
+      <description>Taints and Tolerations </description>
+    </item>
+    
     <item>
       <title>[Kubernetes Study] Labelselector</title>
       <link>https://moo-woong.github.io/posts/kubernetes/kubernetes-study-10-labelselector/</link>

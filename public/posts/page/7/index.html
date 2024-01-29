@@ -70,6 +70,19 @@ Posts
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>LeetCode 공부 - Intersection of Two Linked Lists
+</h2>
+</header>
+<div class=entry-content>
+<p>LeetCode(160) - Intersection of Two Linked Lists 문제 두 Linked List의 headA, headB가 주어진다. 두 List 가 만나는 교차점이 있다면 해당 노드를 반환하고, 두 리스트가 교차하지 않고 평행하다면 null을 반환하라.
+입력 Input: intersectVal = 8, listA = [4,1,8,4,5], listB = [5,6,1,8,4,5], skipA = 2, skipB = 3 skipA, skipB는 주어지는 값이 아닌 설명을 위한 예시이다.
+출력 Output: Intersected at '8' 풀이 문제 - Linked List Cycle 와 매우 유사하다. unordered_set을 이용해 ListNode의 고유성을 기준으로 교차점이 있는지 판단한다....</p>
+</div>
+<footer class=entry-footer><span title="2023-01-10 22:31:16 +0900 KST">January 10, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;148 words&nbsp;·&nbsp;Me</footer>
+<a class=entry-link aria-label="post link to LeetCode 공부 - Intersection of Two Linked Lists" href=https://moo-woong.github.io/posts/algorithm/algo_160_intersection_of_two_linked_lists/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>LeetCode 공부 - Linked List Cycle
 </h2>
 </header>
@@ -118,21 +131,6 @@ Posts
 </div>
 <footer class=entry-footer><span title="2023-01-07 00:20:44 +0900 KST">January 7, 2023</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;295 words&nbsp;·&nbsp;Me</footer>
 <a class=entry-link aria-label="post link to LeetCode 공부 - Merge Sorted Array" href=https://moo-woong.github.io/posts/algorithm/algo_88_merge_sorted_array/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>[Dev/Infra] XXX is not in the sudoers file. This incident will be reported.
-</h2>
-</header>
-<div class=entry-content>
-<p>XXX is not in the sudoers file. This incident will be reported. Ubuntu, CentOS 등 리눅스 환경을 새로 설치하면 만나는 오류. 개발 툴을 설정하기 위해 유틸들을 설치할때 sudo를 사용하다 마주하게 된다.
-XXX is not in the sudoers file. This incident will be reported. 원인 현재 접속중인 계정이 sudoers에 등록되지 않아 발생한다. sudoers파일에 현재 계정을 등록하여 sudo권한을 주자.
-sudo의 뜻은? “super user do”.
-su 뜻은? “super user”
-해결법 su 명령어로 root계정으로 전환 [hugh@localhost ~]$ su Password: #비밀번호 입력 [root@localhost hugh]# [root@localhost hugh]# /etc/sudoers 파일에서 현재 계정을 추가 99 ## Allow root to run any commands anywhere 100 root ALL=(ALL) ALL 101 hugh ALL=(ALL) ALL # &lt;-- sudo권한이 필요한 계정 추가 root계정에서 로그아웃하고 추가한 계정에서 sudo권한이 필요한 명령어 수행 [root@localhost hugh]# exit exit [hugh@localhost ~]$ [hugh@localhost ~]$ [hugh@localhost ~]$ sudo yum install -y vim [sudo] password for hugh: Loaded plugins: fastestmirror, langpacks Loading mirror speeds from cached hostfile * base: mirror....</p>
-</div>
-<footer class=entry-footer><span title="2023-01-03 21:25:33 +0900 KST">January 3, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;161 words&nbsp;·&nbsp;Me</footer>
-<a class=entry-link aria-label="post link to [Dev/Infra] XXX is not in the sudoers file.  This incident will be reported." href=https://moo-woong.github.io/posts/dev_env/sudoers_permission/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
