@@ -1,0 +1,19 @@
+Node1 : Backend{
+  kube-proxy
+}
+Node2 : Database{
+  kube-proxy
+}
+network: Pod Network {
+  shape: cloud
+}
+
+db : Service:DB {
+  text: "10.96.0.12"
+}
+
+Node1 -- network
+Node2 -- network
+
+Node1.kube-proxy -- db
+Node2.kube-proxy -- db

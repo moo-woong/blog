@@ -1,0 +1,47 @@
+Nodes: Nodes(Worker Nodes) {
+    Node1
+    Node2
+    Node3: {
+      style: {
+        fill: red
+      }
+    }
+  }
+  
+  CP: Control Plane {
+    kube-apiserver: {
+      style: {
+        3d: true
+      }
+    }
+    kube-scheduler: {
+      style: {
+        3d: true
+      }
+    }
+    kube-controller-manager: {
+      style: {
+        3d: true
+      }
+      node-controller
+      replication-controller
+      endpoints-controller
+    }
+    etcd: {
+      shape: cylinder
+      style: {
+        3d: true
+      }
+    }
+  
+    kube-apiserver <-> kube-controller-manager
+    kube-apiserver <-> etcd
+    kube-apiserver <-> kube-scheduler
+  }
+  
+  # Cluster.kube-apiserver <-> Cluster.kube-controller-manager.node-controller
+  
+  CP.kube-apiserver <-> Nodes.Node1: Health Check every 5sec.
+  CP.kube-apiserver <-> Nodes.Node2: Health Check every 5sec.
+  CP.kube-apiserver <-> Nodes.Node3: Grace Period every 40sec.
+  

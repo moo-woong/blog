@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>set on Moo-woong</title>
+    <link>https://moo-woong.github.io/tags/set/</link>
+    <description>Recent content in set on Moo-woong</description>
+    <image>
+      <url>https://moo-woong.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://moo-woong.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 05 Feb 2023 15:09:52 +0900</lastBuildDate><atom:link href="https://moo-woong.github.io/tags/set/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Two Sum IV - Input is a BST</title>
+      <link>https://moo-woong.github.io/posts/algorithm/algo_653/</link>
+      <pubDate>Sun, 05 Feb 2023 15:09:52 +0900</pubDate>
+      
+      <guid>https://moo-woong.github.io/posts/algorithm/algo_653/</guid>
+      <description>LeetCode(653) - Two Sum IV - Input is a BST 문제 Binary Search Tree의 root node 와 정수 k가 주어진다. BST정수 중 두 정수를 조합하여 k를 만들 수 있다면 true를, 아니라면 false를 반환하라.
+  입력 Input: root = [5,3,6,2,4,null,7], k = 9 출력 Output: true 풀이 set은 key의 유일성을 보장하며, 고유한 key 검색 시 O(1)의 시간복잡도를 가진다. k - 특정 노드 값이면, 나머지 값에 대해 검색연산을 수행하여 값을 찾을 수 있다.</description>
+    </item>
+    
+  </channel>
+</rss>

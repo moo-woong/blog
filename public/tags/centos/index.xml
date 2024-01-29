@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>CentOS on Moo-woong</title>
+    <link>https://moo-woong.github.io/tags/centos/</link>
+    <description>Recent content in CentOS on Moo-woong</description>
+    <image>
+      <url>https://moo-woong.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://moo-woong.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 03 Jan 2023 21:25:33 +0900</lastBuildDate><atom:link href="https://moo-woong.github.io/tags/centos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Dev/Infra] XXX is not in the sudoers file.  This incident will be reported.</title>
+      <link>https://moo-woong.github.io/posts/dev_env/sudoers_permission/</link>
+      <pubDate>Tue, 03 Jan 2023 21:25:33 +0900</pubDate>
+      
+      <guid>https://moo-woong.github.io/posts/dev_env/sudoers_permission/</guid>
+      <description>XXX is not in the sudoers file. This incident will be reported. Ubuntu, CentOS 등 리눅스 환경을 새로 설치하면 만나는 오류. 개발 툴을 설정하기 위해 유틸들을 설치할때 sudo를 사용하다 마주하게 된다.
+XXX is not in the sudoers file. This incident will be reported. 원인 현재 접속중인 계정이 sudoers에 등록되지 않아 발생한다. sudoers파일에 현재 계정을 등록하여 sudo권한을 주자.
+ sudo의 뜻은? &amp;ldquo;super user do&amp;rdquo;.
+  su 뜻은? &amp;ldquo;super user&amp;rdquo;
+ 해결법  su 명령어로 root계정으로 전환  [hugh@localhost ~]$ su Password: #비밀번호 입력 [root@localhost hugh]# [root@localhost hugh]# /etc/sudoers 파일에서 현재 계정을 추가   99 ## Allow root to run any commands anywhere 100 root ALL=(ALL) ALL 101 hugh ALL=(ALL) ALL # &amp;lt;-- sudo권한이 필요한 계정 추가 root계정에서 로그아웃하고 추가한 계정에서 sudo권한이 필요한 명령어 수행  [root@localhost hugh]# exit exit [hugh@localhost ~]$ [hugh@localhost ~]$ [hugh@localhost ~]$ sudo yum install -y vim [sudo] password for hugh: Loaded plugins: fastestmirror, langpacks Loading mirror speeds from cached hostfile * base: mirror.</description>
+    </item>
+    
+  </channel>
+</rss>
