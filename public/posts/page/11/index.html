@@ -70,6 +70,19 @@ Posts
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>LeetCode 공부 - Valid Parentheses
+</h2>
+</header>
+<div class=entry-content>
+<p>LeetCode(20) - Valid Parentheses 문제 소괄호, 중괄호, 대괄호로 이루어진 문자열이 주어진다. 이 문자열의 괄호들이 알맞은 pair라면 true를, 아니라면 false를 반환한다.
+입력 s = "()[]{}" 출력 true 풀이 전형적인 stack문제로, 괄호가 닫힐때 마다 pair를 확인한다. 주어진 문자열의 문자들을 순회하면서 문자가 여는괄호면 stack에 쌓고, 닫는 괄호라면, 현재 stack에서 top()과 pair비교 후 pair라면 pop을, 아니면 false를 리턴한다. 코드 Visual studio에서 바로 실행하도록 임의의 main문을 함께 첨부합니다. isValid()만 보시면 됩니다.
+#include&lt;iostream> #include&lt;string> #include&lt;stack> using namespace std; bool isValid(string s) { stack&lt;char> st; for (char c : s) { if (c == '(' || c == '{' || c == '[') { st....</p>
+</div>
+<footer class=entry-footer><span title="2022-12-01 23:05:08 +0900 KST">December 1, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;208 words&nbsp;·&nbsp;Me</footer>
+<a class=entry-link aria-label="post link to LeetCode 공부 - Valid Parentheses" href=https://moo-woong.github.io/posts/algorithm/algo_20_valid_parentheses/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>LeetCode 공부 - Longest Common Prefix
 </h2>
 </header>
@@ -116,22 +129,12 @@ Vanilla k8s는 환경설정에 많은 리소스도 필요하고 회사에서 pro
 <footer class=entry-footer><span title="2022-11-01 22:54:51 +0900 KST">November 1, 2022</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;528 words&nbsp;·&nbsp;Me</footer>
 <a class=entry-link aria-label="post link to Ubuntu에 Minikube 설치하기" href=https://moo-woong.github.io/posts/kubernetes/minikube/></a>
 </article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Github Blog와 Hugo로 블로그 개설하기
-</h2>
-</header>
-<div class=entry-content>
-<p>GitHub Blog와 Hugo로 블로그 만들기 개요 회사만 다니다보니 이 핑계, 저 핑계를 대며 개인업무 역량관리에 소홀한게 느껴졌습니다. 과거에도 공부할 때 하나하나 PPT자료를 만들며 체득했던 전공 공부, 정보들은 저한테는 좋은 경험이었습니다. 이에 대한 경험으로 블로그를 만들어 공부도 하고, 정리한 정보들을 공유하여 찾아오는 분들에게 득이되도록 하고 싶어 블로그를 만들어보게 되었습니다. 앞으로도 잘 부탁드리며 블로그 구축부터 정리해보겠습니다.
-환경 Blog: Github + Hugo Host machine: Ubuntu 20.04 LTS + VMWare workstation 16 Editor: VS Code on Windows 환경 선택에 대해서는 특별한 이유는 없습니다....</p>
-</div>
-<footer class=entry-footer><span title="2022-10-16 08:15:52 -0700 -0700">October 16, 2022</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;909 words&nbsp;·&nbsp;Me</footer>
-<a class=entry-link aria-label="post link to Github Blog와 Hugo로 블로그 개설하기" href=https://moo-woong.github.io/posts/2022-10-17-github-hugo/></a>
-</article>
 <footer class=page-footer>
 <nav class=pagination>
 <a class=prev href=https://moo-woong.github.io/posts/page/10/>
 «&nbsp;Prev&nbsp;
+</a>
+<a class=next href=https://moo-woong.github.io/posts/page/12/>Next&nbsp;&nbsp;»
 </a>
 </nav>
 </footer>

@@ -70,70 +70,20 @@ Posts
 </header>
 <article class=post-entry>
 <header class=entry-header>
-<h2>LeetCode 공부 - Sqrt(x)
+<h2>Github Blog와 Hugo로 블로그 개설하기
 </h2>
 </header>
 <div class=entry-content>
-<p>LeetCode(69) - Sqrt(x) 문제 양의 정수 x가 주어질 때, x의 제곱근을 반환하라. 반환되는 제곱근은 정수형으로 내림한 값으로 반환하라.
-입력 Input: x = 8 출력 Output: 2 풀이 주어진 양의정수에 대해 양의 제곱근을 반환하는 문제다. 정밀하게 구하는 방식은 뉴튼-랩슨법을 써서 많은 연산을 통해 정확도를 높이지만, 문제는 정수를 반환하는 문제다. 주어지는 x가 매우 큰 값일 경우 1씩 더해서 제곱근을 찾기에는 많은 연산을 필요로 한다. 찾는 제곱근은 양의 제곱근이므로, 1부터 시작해서 x까지 연산해야한다....</p>
+<p>GitHub Blog와 Hugo로 블로그 만들기 개요 회사만 다니다보니 이 핑계, 저 핑계를 대며 개인업무 역량관리에 소홀한게 느껴졌습니다. 과거에도 공부할 때 하나하나 PPT자료를 만들며 체득했던 전공 공부, 정보들은 저한테는 좋은 경험이었습니다. 이에 대한 경험으로 블로그를 만들어 공부도 하고, 정리한 정보들을 공유하여 찾아오는 분들에게 득이되도록 하고 싶어 블로그를 만들어보게 되었습니다. 앞으로도 잘 부탁드리며 블로그 구축부터 정리해보겠습니다.
+환경 Blog: Github + Hugo Host machine: Ubuntu 20.04 LTS + VMWare workstation 16 Editor: VS Code on Windows 환경 선택에 대해서는 특별한 이유는 없습니다....</p>
 </div>
-<footer class=entry-footer><span title="2022-12-08 01:07:34 +0900 KST">December 8, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;225 words&nbsp;·&nbsp;Me</footer>
-<a class=entry-link aria-label="post link to LeetCode 공부 - Sqrt(x)" href=https://moo-woong.github.io/posts/algorithm/algo_69_sqrt/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>LeetCode 공부 - Add Binary
-</h2>
-</header>
-<div class=entry-content>
-<p>LeetCode(67) - Add Binary 문제 Binary를 나타내는 문자열 s1, s2가 주어질 때 두 Bianry를 합 한 문자열을 반환하라.
-입력 Input: a = "1010", b = "1011" 출력 Output: "10101" 풀이 두 문자열의 끝에서 부터 0번 째 index 까지 순회한다. 순회하며 각각 i, j위치에 있는 바이너리를 계산한다. i와 j의 값을 carry에 저장하고, carry는 모듈러 연산을 통해 나머지 값을 반환할 string의 첫 번째 위치에 저장한다. carry는 나누기의 몫을 취하고, 해당 값을 유지한다....</p>
-</div>
-<footer class=entry-footer><span title="2022-12-08 00:25:33 +0900 KST">December 8, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;193 words&nbsp;·&nbsp;Me</footer>
-<a class=entry-link aria-label="post link to LeetCode 공부 - Add Binary" href=https://moo-woong.github.io/posts/algorithm/algo_67_add_binary/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>LeetCode 공부 - Longest Substring Without Repeating Characters
-</h2>
-</header>
-<div class=entry-content>
-<p>LeetCode(3) - Longest Substring Without Repeating Characters 문제 문자열 s가 주어질 때, 이 문자열에서 반복되지 않은 문자를 갖는 substring의 길이를 반환하라.
-입력 Input: s = "abcabcbb" 출력 Output: 3 풀이 문제 설명은 간단한데 이해가 잘 안된다. 풀어서 써보자면, 문자열 중에서 중복되지 않은 문자들의 최대 길이를 구하는 문제다. 예를들어, 문자열 s = "abcdea"가 있다면, abcde 까지 중복되지 않은 문자열이므로 결과 값은 5 이다. s = "abcdeafg" 라고 하면, 두 번째 index 부터인 "bcdeafg"에는 중복이 없으므로 이 때 반환값은 문자열 길이 7 이다....</p>
-</div>
-<footer class=entry-footer><span title="2022-12-05 00:01:19 +0900 KST">December 5, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;241 words&nbsp;·&nbsp;Me</footer>
-<a class=entry-link aria-label="post link to LeetCode 공부 - Longest Substring Without Repeating Characters" href=https://moo-woong.github.io/posts/algorithm/algo_3_longest_substring_without_repeating_characters/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>LeetCode 공부 - Add Two Numbers
-</h2>
-</header>
-<div class=entry-content>
-<p>LeetCode(67) - Add Two Numbers 문제 Non-empty 정수 Linked list 두 개가 주어진다. 각 list는 정수의 역방향, 즉 가장 낮은 자리수가 첫 번재 위치한다. 각 리스트의 정수를 더 하여 주어진 리스트와 동일하게 가장 낮은 자리 수의 정수가 먼저 오도록 배치된 LinkList를 반환하라.
-입력 Input: l1 = [2,4,3], l2 = [5,6,4] 출력 Output: [7,0,8] 풀이 두 리스트를 모두 순회하면서 리스트가 NULL이 아닐 경우, 해당 val값을 sum 변수에 합한다. carry가 발생할 경우를 고려한다....</p>
-</div>
-<footer class=entry-footer><span title="2022-12-04 22:19:32 +0900 KST">December 4, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;237 words&nbsp;·&nbsp;Me</footer>
-<a class=entry-link aria-label="post link to LeetCode 공부 - Add Two Numbers" href=https://moo-woong.github.io/posts/algorithm/algo_2_add_two_numbers/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>LeetCode 공부 - Plus One
-</h2>
-</header>
-<div class=entry-content>
-<p>LeetCode(66) - Plus One 문제 정수를 표현하는 vector&lt;int> digits가 주어진다. digits는 배열로 이루어져 있지만, 정수를 표현한다. 예를들어 [3,2,1] 배열인 경우, 정수 321을 나타낸다. 주어진 digits배열에 +1 한 값을 vector&lt;int>형태로 반환하라.
-입력 Input: digits = [4,3,2,1] 출력 Output: [4,3,2,2] 풀이 맨 마지막 정수 값에 +1을 할 수 있겠으나… carry로 인한 자리수가 변경될 수 있고, 이를 위해서 예외처리가 많아질것 같다. 배열을 정수로 변환하고, 정수를 배열로 변환하도록 한다. …라고 생각했으나, 자리수가 100자리까지 나오는데 100자리수를 정수형으로 저장할 수 없다....</p>
-</div>
-<footer class=entry-footer><span title="2022-12-04 21:02:51 +0900 KST">December 4, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;200 words&nbsp;·&nbsp;Me</footer>
-<a class=entry-link aria-label="post link to LeetCode 공부 - Plus One" href=https://moo-woong.github.io/posts/algorithm/algo_66_plus_one/></a>
+<footer class=entry-footer><span title="2022-10-16 08:15:52 -0700 -0700">October 16, 2022</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;909 words&nbsp;·&nbsp;Me</footer>
+<a class=entry-link aria-label="post link to Github Blog와 Hugo로 블로그 개설하기" href=https://moo-woong.github.io/posts/2022-10-17-github-hugo/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
-<a class=prev href=https://moo-woong.github.io/posts/page/8/>
+<a class=prev href=https://moo-woong.github.io/posts/page/11/>
 «&nbsp;Prev&nbsp;
-</a>
-<a class=next href=https://moo-woong.github.io/posts/page/10/>Next&nbsp;&nbsp;»
 </a>
 </nav>
 </footer>
