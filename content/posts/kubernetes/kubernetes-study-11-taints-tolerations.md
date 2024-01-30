@@ -1,5 +1,5 @@
 ---
-title: "Kubernetes Study 11 Taints Tolerations"
+title: "[Kubernetes Study] Taints Tolerations"
 date: 2024-01-30T00:00:26+09:00
 series: ["Kubernetes Study"]
 categories: ["Kubernetes"]
