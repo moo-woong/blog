@@ -117,6 +117,16 @@ sudo apt install linux-modules-extra-raspi && reboot
 ```
 sudo apt-get install kubeadm=1.22.8-00 kubelet=1.22.8-00 kubectl=1.22.8-00 -y
 ```
+
+* Disable systemd-networkd-wait-online.service *
+라즈베리파이를 재부팅 하면 2분동안 네트워크 설정을 기다린다.
+기본으로 enable인데 disable로 하고 부팅속도를 빠르게 해주자.
+```
+$  systemctl disable systemd-networkd-wait-online.service
+$  systemctl mask systemd-networkd-wait-online.service
+```
+
+
 ## 동작 확인
 동작 확인을 위한 nginx deployment 설치
 
