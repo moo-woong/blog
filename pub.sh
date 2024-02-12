@@ -17,6 +17,7 @@ cd public
 # 4. Add changes and commit
 git add . > /dev/null
 git commit -m "$commit_message" 
+echo "git push from submodules"
 git push origin master > /dev/null
 
 # 5. Move back to project root
@@ -25,6 +26,5 @@ cd ../
 # 7. Add changes and commit
 git add . > /dev/null 
 git commit -m "$commit_message" > /dev/null
-git push origin master > /dev/null
-
-echo "Deployment complete!"
+echo "git push from parent repo"
+git push origin master > /dev/null 2>&1
