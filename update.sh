@@ -14,16 +14,16 @@ hugo > /dev/null 2>&1
 # 2. Move to 'public' folder
 cd public
 
-# 4. Add changes and commit
+# 3. Add changes and commit
 git add . > /dev/null 2>&1
 git commit -m "$commit_message"  > /dev/null 2>&1
 echo "git push from submodules"
 git push origin master > /dev/null 2>&1
 
-# 5. Move back to project root
+# 4. Move back to project root
 cd ../
 
-# 7. Add changes and commit
+# 5. Add changes and commit
 git add . > /dev/null 2>&1
 git commit -m "$commit_message" > /dev/null 2>&1
 echo "git push from parent repo"
