@@ -1,7 +1,6 @@
 ---
 title: "Kubernetes Study 14 Static Pod"
 date: 2024-02-13T13:24:42Z
-draft: true
 ---
 
 ## Static Pod란?
