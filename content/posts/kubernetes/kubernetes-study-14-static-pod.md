@@ -1,5 +1,5 @@
 ---
-title: "Kubernetes Study 14 Static Pod"
+title: "[Kubernetes Study] Static Pod"
 date: 2024-02-13T13:24:42Z
 ---
 
