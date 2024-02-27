@@ -167,3 +167,5 @@ hugh@master:~/yaml $ kubectl get event -o wide
 LAST SEEN   TYPE     REASON      OBJECT                       SUBOBJECT                SOURCE                                    MESSAGE                                                                    FIRST SEEN   COUNT   NAME
 63s         Normal   Scheduled   pod/nginx                                             my-scheduler, my-scheduler-my-scheduler   Successfully assigned default/nginx to worker2                             63s          1       nginx.17b71994464b2560
 ```
+
+사용된 custom scheduler의 yaml파일은 [여기](https://github.com/moo-woong/samples/tree/main/k8s-custom-scheduler)서 다운받을 수 있다.
