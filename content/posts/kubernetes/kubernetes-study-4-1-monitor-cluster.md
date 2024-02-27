@@ -47,7 +47,7 @@ deployment.apps/metrics-server created
 apiservice.apiregistration.k8s.io/v1beta1.metrics.k8s.io created
 ```
 
-설치하면 readiness failure로 metrics server가 정상적으로 실행되지 않는다. 이는 인증서 오류로 기본적으로 TLS 사용 옵션이 켜져있기 때문에 발생한다. 나의 경우에는 private 망이고 테스트 목적이므로 TLS를 사용하지 않고 disable한 후 사용했다. [설정]https://github.com/kubernetes-sigs/metrics-server?tab=readme-ov-file#configuration 은 다음을 참고한다.
+설치하면 readiness failure로 metrics server가 정상적으로 실행되지 않는다. 이는 인증서 오류로 기본적으로 TLS 사용 옵션이 켜져있기 때문에 발생한다. 나의 경우에는 private 망이고 테스트 목적이므로 TLS를 사용하지 않고 disable한 후 사용했다. [설정](https://github.com/kubernetes-sigs/metrics-server?tab=readme-ov-file#configuration) 은 다음을 참고한다.
 
 ```yaml
     spec:
