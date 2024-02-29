@@ -1,5 +1,5 @@
 ---
-title: "[Kubernetes Study] Monitor Cluster Components"
+title: "[Kubernetes Study] Monitor Cluster Components and Application Logs"
 date: 2024-02-27T11:13:52Z
 series: ["Kubernetes Study"]
 categories: ["Kubernetes"]
@@ -89,3 +89,60 @@ hugh@master:~/components $ kubectl top pod --containers
 POD     NAME    CPU(cores)   MEMORY(bytes)   
 nginx   nginx   0m           4Mi       
 ```
+
+## Application Logs
+
+kubernetes log 확인 방법은 docker의 docker log와 유사하다
+```
+kubectl logs <pod-name>
+```
+
+### Sample
+`kodekloud/event-simulator` container를 Pod로 kubernetes에 배치해보자. 해당 container는 랜덤한 이벤트를 발생시키는 컨테이너다.
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: event-simulator-pod
+spec:
+  containers:
+  - name: event-simulator
+    image: kodekloud/event-simulator
+  - name: nginx
+    image: nginx
+```
+
+Pod에 container두개를 동작시키도록 해서 배치했다.
+```sh
+hugh@master:~/yaml/logging $ k apply -f log.yaml 
+pod/event-simulator-pod created
+hugh@master:~/yaml/logging $ 
+```
+
+사용자의 현재 namespace에서 pod-name의 로그를 출력한다. 
+
+### -f 옵션(streaming)
+Pod의 로그를 실시간 스트리밍으로 확인한다. 사용자가 취소하기 전까지 계속 로그를 출력한다.
+```
+kubectl logs -f <pod-name>
+```
+
+### -c 옵션(container)
+Pod는 여러개의 container로 구성될 수 있다. `-c`옵션은 container를 선택하는 옵션이며, 여러 container가 있고 -c 옵션이 없다면 첫 번째 container가 기본으로 선택된다.
+
+```
+kubectl logs <pod-name> -c <container-name>
+```
+
+### example
+```
+hugh@master:~/yaml/logging $ k logs -f event-simulator-pod -c nginx
+/docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+/docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+/docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+```
+
