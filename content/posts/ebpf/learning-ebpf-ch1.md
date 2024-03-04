@@ -1,9 +1,8 @@
 ---
-title: "Learning eBPF - What Is eBPF, and Why Is it Imports?"
+title: "Learning eBPF - What Is eBPF, and Why Is it Imports? 1/2"
 date: 2024-03-02T07:04:46Z
 categories: ["Study"]
 tags: ["eBPF"]
-draft: true
 ---
 
 [Learning eBPF](https://cilium.isovalent.com/hubfs/Learning-eBPF%20-%20Full%20book.pdf) 스터디
@@ -51,4 +50,33 @@ BFP는 우리가 아는 `extended BPF` 또는 `eBPF`로 진화되었으며 eBPF�
 
 ## 리눅스 커널에서의 eBPF
 
-리눅스 커널은 시스템에서 실행되는 애플리케이션과 하드웨어 사이의 계층이다. 애플리케이션들이 실행되는 계층은 하드웨어의 실행권한이 없는 User space라는 공간에서 실행된다. 대신에, 애플리케이션은 하드웨어를 실행하기 위해 System call(syscall)이라는 인터페이스를 사용해 커널에 특정 작업을 요청한다. syscall은 파일 쓰기, 네트워크 트래픽 수신, 메모리 접근등이 있을 수 있다. 
+리눅스 커널은 시스템에서 실행되는 애플리케이션과 하드웨어 사이의 계층이다. 애플리케이션들이 실행되는 계층은 하드웨어의 실행권한이 없는 User space라는 공간에서 실행된다. 대신에, 애플리케이션은 하드웨어를 실행하기 위해 System call(syscall)이라는 인터페이스를 사용해 커널에 특정 작업을 요청한다. syscall은 파일 쓰기, 네트워크 트래픽 수신, 메모리 접근등이 있을 수 있다. 일반적인 개발자들이라면 syscall을 직접 사용하지 않는다. 이는 고수준으로 추상화된 다양한 라이브러리들이 제공되고 있어 이 라이브러리들을 사용하고 있기 때문이다. `echo` 라는 유틸로 간단한 문자열을 출력하도록 할 때도 많은 syscall이 호출됨을 확인할 수 있다.
+
+```sh
+hugh@dev:~$ strace -c echo "hello"
+hello
+% time     seconds  usecs/call     calls    errors syscall
+------ ----------- ----------- --------- --------- ----------------
+ 49.55    0.002829        2829         1           execve
+ 18.43    0.001052          35        30        12 openat
+  8.99    0.000513          25        20           mmap
+  7.64    0.000436          22        19           newfstatat
+  5.04    0.000288          14        20           close
+  2.45    0.000140          35         4           mprotect
+  1.82    0.000104          34         3           munmap
+  1.33    0.000076          25         3           read
+  0.98    0.000056          18         3           brk
+  0.96    0.000055          55         1         1 faccessat
+  0.63    0.000036          36         1           write
+  0.40    0.000023          23         1           set_tid_address
+  0.39    0.000022          22         1           getrandom
+  0.39    0.000022          22         1           rseq
+  0.37    0.000021          21         1           set_robust_list
+  0.33    0.000019          19         1           prlimit64
+  0.30    0.000017          17         1           futex
+------ ----------- ----------- --------- --------- ----------------
+100.00    0.005709          51       111        13 total
+hugh@dev:~$
+```
+
+애플리케이션들은 커널에 의존적이기 때문에 커널과의 상호작용을 이해하고 여기에 eBPF를 사용하면 새로운 인사이트를 얻을 수 있다.
